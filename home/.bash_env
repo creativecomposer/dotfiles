@@ -1,0 +1,5 @@
+# Source from .zshenv in order to avoid duplicate code
+
+if [ -f $HOME/.zshenv ]; then
+  source $HOME/.zshenv
+fi
