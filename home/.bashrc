@@ -125,13 +125,4 @@ xterm*|rxvt*)
     ;;
 esac
 
-
-export RIPGREP_CONFIG_PATH=~/.ripgreprc
-export FZF_DEFAULT_COMMAND='rg --files'
-export PATH=$PATH:~/.vim/pack/minpac/start/fzf/bin:~/.local/bin
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-
 eval "$(direnv hook bash)"
-# Set PATH, MANPATH, etc., for Homebrew.
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"

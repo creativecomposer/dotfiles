@@ -120,16 +120,10 @@ bindkey "^[[B" history-substring-search-down
 # Disable using pager for commands like git log. See https://stackoverflow.com/questions/33592008/git-log-show-etc-replaces-the-terminal-screen/
 LESS=-RFX
 
-export RIPGREP_CONFIG_PATH=~/.ripgreprc
-export FZF_DEFAULT_COMMAND='rg --files'
-export PATH=$PATH:~/.vim/pack/minpac/start/fzf/bin:~/.local/bin
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-
 eval "$(direnv hook $SHELL)"
 # Set PATH, MANPATH, etc., for Homebrew.
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 if [[ -z "$TMUX" ]]; then
   tmux new-session -A -s "$USER"
 fi
+
