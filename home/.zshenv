@@ -7,7 +7,5 @@ export NVM_DIR="$HOME/.nvm"
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-source ~/.fonts/*.sh
-
 alias vim=nvim
 export EDITOR=vim
