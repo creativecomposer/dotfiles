@@ -1,0 +1,27 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "permission": {
+    "read": "allow",
+    "write": "allow",
+    "edit": "allow",
+    "bash": "ask"
+  },
+  "provider": {
+    "llama.cpp": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "llama-server (local)",
+      "options": {
+        "baseURL": "http://127.0.0.1:8080/v1"
+      },
+      "models": {
+        "Qwen2.5-Coder-1.5B": {
+          "name": "Qwen2.5-Coder (1.5B)",
+          "limit": {
+            "context": 32768,
+            "output": 16384
+          }
+        }
+      }
+    }
+  }
+}
